@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		1A208B6726861414007EEAF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A208B6526861414007EEAF4 /* LaunchScreen.storyboard */; };
 		1A208B6F26861643007EEAF4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A208B6E26861643007EEAF4 /* CustomTableViewCell.swift */; };
 		1A208B71268B460C007EEAF4 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A208B70268B460C007EEAF4 /* Stock.swift */; };
+		1A208B74268C79A0007EEAF4 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 1A208B73268C79A0007EEAF4 /* TinyConstraints */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A208B74268C79A0007EEAF4 /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,15 +64,31 @@
 			children = (
 				1A208B5A26861412007EEAF4 /* AppDelegate.swift */,
 				1A208B5C26861412007EEAF4 /* SceneDelegate.swift */,
-				1A208B5E26861412007EEAF4 /* ViewController.swift */,
+				1A208B76268C7A40007EEAF4 /* New Group */,
 				1A208B70268B460C007EEAF4 /* Stock.swift */,
-				1A208B6E26861643007EEAF4 /* CustomTableViewCell.swift */,
-				1A208B6026861412007EEAF4 /* Main.storyboard */,
+				1A208B75268C79F0007EEAF4 /* View */,
 				1A208B6326861414007EEAF4 /* Assets.xcassets */,
 				1A208B6526861414007EEAF4 /* LaunchScreen.storyboard */,
 				1A208B6826861414007EEAF4 /* Info.plist */,
 			);
 			path = Stocks;
+			sourceTree = "<group>";
+		};
+		1A208B75268C79F0007EEAF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A208B6026861412007EEAF4 /* Main.storyboard */,
+				1A208B6E26861643007EEAF4 /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A208B76268C7A40007EEAF4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				1A208B5E26861412007EEAF4 /* ViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +107,9 @@
 			dependencies = (
 			);
 			name = Stocks;
+			packageProductDependencies = (
+				1A208B73268C79A0007EEAF4 /* TinyConstraints */,
+			);
 			productName = Stocks;
 			productReference = 1A208B5726861412007EEAF4 /* Stocks.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 1A208B4E26861412007EEAF4;
+			packageReferences = (
+				1A208B72268C79A0007EEAF4 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+			);
 			productRefGroup = 1A208B5826861412007EEAF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A208B72268C79A0007EEAF4 /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A208B73268C79A0007EEAF4 /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A208B72268C79A0007EEAF4 /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A208B4F26861412007EEAF4 /* Project object */;
 }
