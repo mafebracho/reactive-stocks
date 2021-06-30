@@ -19,13 +19,13 @@ class CustomTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private let nameLabel: UILabel = {
+    let nameLabel: UILabel = {
         let nameLabel = UILabel()
         nameLabel.font = .preferredFont(forTextStyle: .headline)
         return nameLabel
     }()
     
-    private let priceLabel: UILabel = {
+    let priceLabel: UILabel = {
         let priceLabel = UILabel()
         priceLabel.font = .preferredFont(forTextStyle: .subheadline)
         priceLabel.text = "Stock Price"
@@ -36,7 +36,7 @@ class CustomTableViewCell: UITableViewCell {
         contentView.addSubview(nameLabel)
         contentView.addSubview(priceLabel)
         
-        nameLabel.topToSuperview(offset: 12)
+        nameLabel.centerYToSuperview()
         nameLabel.leadingToSuperview(offset: 12)
         
         priceLabel.trailingToSuperview(offset: 12)
