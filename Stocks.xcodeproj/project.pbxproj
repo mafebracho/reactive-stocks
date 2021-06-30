@@ -64,7 +64,7 @@
 			children = (
 				1A208B5A26861412007EEAF4 /* AppDelegate.swift */,
 				1A208B5C26861412007EEAF4 /* SceneDelegate.swift */,
-				1A208B76268C7A40007EEAF4 /* New Group */,
+				1A208B76268C7A40007EEAF4 /* Controller */,
 				1A208B70268B460C007EEAF4 /* Stock.swift */,
 				1A208B75268C79F0007EEAF4 /* View */,
 				1A208B6326861414007EEAF4 /* Assets.xcassets */,
@@ -83,12 +83,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		1A208B76268C7A40007EEAF4 /* New Group */ = {
+		1A208B76268C7A40007EEAF4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				1A208B5E26861412007EEAF4 /* ViewController.swift */,
 			);
-			path = "New Group";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

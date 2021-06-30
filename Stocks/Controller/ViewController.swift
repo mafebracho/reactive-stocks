@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         tableView.edgesToSuperview()
     }
     
-    
 }
 // MARK: - Table View Data Source
 
